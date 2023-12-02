@@ -32,9 +32,3 @@ docker run -it image-rayzen-gilberto python raizen.py
 
 Should display the validation of the process and that the excel file was writen.
 
-
-Diretório de Trabalho: /app
-total_volume_input=  138012933.25249162
-total_volume_output=  138012933.25249165
-Os totais são iguais.
-DataFrame salvo com sucesso em /app/output_data.xlsx
