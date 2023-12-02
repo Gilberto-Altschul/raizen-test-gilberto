@@ -1,0 +1,17 @@
+FROM python:3.8
+
+WORKDIR /app
+
+# Copie o código fonte para o contêiner
+COPY raizen.py /app/
+
+# Copie o arquivo Excel para o diretório /app
+COPY vendas-combustiveis-m3.xlsx /app/
+
+# Atualize o pip e setuptools
+RUN pip install --no-cache-dir --upgrade pip setuptools
+
+# Instale as dependências, incluindo openpyxl
+RUN pip install pandas==1.3.3 xlrd==2.0.1 openpyxl
+
+CMD ["python", "raizen.py"]
