@@ -1,12 +1,12 @@
 # raizen-test-gilberto
 
-# converted the excel file to xlsx vendas-combustiveis-m3.xlsx with two tabs Planilha1 e Planilha2. 
+- converted the excel file to xlsx vendas-combustiveis-m3.xlsx with two tabs Planilha1 e Planilha2. 
 
-# the data in each tab is in the followig collumns COMBUSTÍVEL, ANO, REGIÃO, ESTADO, UNIDADE, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez, TOTAL
+- the data in each tab is in the followig collumns COMBUSTÍVEL, ANO, REGIÃO, ESTADO, UNIDADE, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez, TOTAL
 
-# the program in python extract the data from the two tabs and store the data in the following schema in excel file: collumn year_month, data type date, collumn uf, data type string, collumn product, data type string, collumn unit, data type string, collumn volume, data type double, collumn created_at, data type timestamp
+- the program in python extract the data from the two tabs and store the data in the following schema in excel file: collumn year_month, data type date, collumn uf, data type string, collumn product, data type string, collumn unit, data type string, collumn volume, data type double, collumn created_at, data type timestamp
 
-# The mapping from the input to the output is
+- The mapping from the input to the output is
 
 year_month = ANO || IF 'Jan' then 01, IF 'Fev' then 02, and so for until Dez,
 uf = ESTADO,
@@ -17,9 +17,9 @@ volume =  IF 'Jan' then cell corresponding collumn 'Jan' for each line from inpu
 each month 'Jan', 'Fev, 'Mar,... will be a line for output
 
 
-# docker container on windows to store the project. The excel files will be in the same directorie of the image docker
+- docker container on windows to store the project. The excel files will be in the same directory of the image docker
 
-# github to save all the project that a user can create an image in a docker container and test 
+- github to save all the project that a user can create an image in a docker container and test 
 
  
 # The user must create a docker container image with this commands:
